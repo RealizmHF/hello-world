@@ -1,7 +1,7 @@
 import React from 'react'
 import Tool from './Tool'
 import Header from './Header'
-import Links from './Links'
+import '/Users/james/Desktop/hello-world/src/CSS/Main.css'
 
 class Main extends React.Component {
 
@@ -13,13 +13,12 @@ class Main extends React.Component {
     }
   }
 
-
   getInitialState() {
     return {
       display: 'Tool'
     }
   }
-  
+
   handleClick() {
       var display = this.state.display
       var newActive = display === 'Tool' ? 'Help' : 'Tool'
@@ -33,9 +32,9 @@ class Main extends React.Component {
 
     if(display === 'Tool'){
       return(
-        <div>
-          <Header />
-          <Links />
+        <div className="Main-tool-view">
+          <Header className="Main-header" />
+          <Tool className="Main-tool" />
         </div>
       );
       
@@ -46,8 +45,6 @@ class Main extends React.Component {
     return (
         <div>
           {this.displayState()}
-          console.log(this.state)
-          
         </div>
     );
 

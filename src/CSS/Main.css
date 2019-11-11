@@ -1,0 +1,17 @@
+.Main-tool-view{
+    display: grid;
+    grid-template-areas:
+        "head-image head-image head-image"
+        "title title title"
+        "tool tool tool";
+}
+
+.Main-header{
+    grid-area: head-image;
+}
+.Main-links{
+    grid-area: title;
+}
+.Main-tool{
+    grid-area: tool;
+}

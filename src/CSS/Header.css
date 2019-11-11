@@ -4,22 +4,54 @@
 
 .Header-header{
     background-color: white;
-    max-height: 50vh;
-    min-height: 50vh;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-areas:
+        "image image image"
+        "title title title"
+        "desc desc desc"
+        "link john john";
     align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    
 }
 
-.Header-title{
-    padding-top: 0cm;
+.Header-logo{
+    max-height: 150px;
+    min-width: 300px;
+    padding-right: 1100px;
+
+    grid-area: image;
 }
 
 .Header-john{
-    color: black;
+    grid-area: john;
+    background-color: white;
+    border: none;
+    color: rgb(0, 154, 216);
+    font-size: 25px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 30px;
+    font-family: Impact, Charcoal, sans-serif;
+}
+.Header-john:hover{
+    background-color: rgb(0, 50, 113);
+    border: 2px solid rgb(0, 154, 216);
+    color: white;
+}
+
+.Header-title{
+    grid-area: title;
+    font-size: 32pt
 }
 
 .Header-desc{
+    grid-area: desc;
     font: bold;
     font-size: 4mm;
+}
+
+.Header-link-line{
+    grid-area: link;
 }
