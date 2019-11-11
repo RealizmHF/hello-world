@@ -1,0 +1,25 @@
+.Header {
+    text-align: center;
+}
+
+.Header-header{
+    background-color: white;
+    max-height: 50vh;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Header-title{
+    padding-top: 0cm;
+}
+
+.Header-john{
+    color: black;
+}
+
+.Header-desc{
+    font: bold;
+    font-size: 4mm;
+}
