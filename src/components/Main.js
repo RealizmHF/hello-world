@@ -27,24 +27,12 @@ class Main extends React.Component {
     });
   }
 
-  displayState(){
-    var display = this.state.display
-
-    if(display === 'Tool'){
-      return(
-        <div className="Main-tool-view">
-          <Header className="Main-header" />
-          <Tool className="Main-tool" />
-        </div>
-      );
-      
-    }
-  }
   render() {
     
     return (
-        <div>
-          {this.displayState()}
+        <div className="Main-tool-view">
+          <Header className="Main-header" />
+          <Tool className="Main-tool" />
         </div>
     );
 

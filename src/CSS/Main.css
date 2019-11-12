@@ -1,17 +1,12 @@
 .Main-tool-view{
-    display: grid;
-    grid-template-areas:
-        "head-image head-image head-image"
-        "title title title"
-        "tool tool tool";
+    display: flex;
+    flex-direction: column;
 }
 
 .Main-header{
-    grid-area: head-image;
+    grid-area: header;
 }
-.Main-links{
-    grid-area: title;
-}
+
 .Main-tool{
     grid-area: tool;
 }

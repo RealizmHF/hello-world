@@ -8,7 +8,7 @@ class Tool extends React.Component{
     render(){
         return(
             <div className="Tool-header">
-                <DataSet />
+                <DataSet className="Tool-data" />
             </div>
         );
     }

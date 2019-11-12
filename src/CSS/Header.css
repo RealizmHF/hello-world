@@ -7,9 +7,8 @@
     display: grid;
     grid-template-areas:
         "image image image"
-        "title title title"
-        "desc desc desc"
-        "link john john";
+        "john john link"
+        "title title title";
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     
@@ -23,33 +22,26 @@
     grid-area: image;
 }
 
-.Header-john{
-    grid-area: john;
-    background-color: white;
-    border: none;
-    color: rgb(0, 154, 216);
-    font-size: 25px;
-    padding-bottom: 10px;
-    padding-top: 20px;
-    padding-left: 10px;
-    padding-right: 30px;
-    font-family: Impact, Charcoal, sans-serif;
-}
-.Header-john:hover{
-    background-color: rgb(0, 50, 113);
-    border: 2px solid rgb(0, 154, 216);
-    color: white;
-}
-
 .Header-title{
     grid-area: title;
     font-size: 32pt
 }
 
-.Header-desc{
-    grid-area: desc;
-    font: bold;
-    font-size: 4mm;
+.Header-title-image{
+    position: relative;
+    width: 100%;
+    border: 3px solid rgb(0, 50, 113);
+    border-left: none;
+    border-right: none;
+}
+
+.Header-title-text{
+    position: absolute;
+    top: 120px;
+    left: 80px;
+    width: 100%;
+    color: rgb(0, 154, 216);
+    text-shadow: 2px 2px 2px rgb(0, 50, 113);
 }
 
 .Header-link-line{
