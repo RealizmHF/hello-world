@@ -2,15 +2,21 @@ import React from 'react'
 import Tool from './Tool'
 import Header from './Header'
 import '/Users/james/Desktop/hello-world/src/CSS/Main.css'
+import QuickGuide from './QuickGuide';
 
 class Main extends React.Component {
 
   constructor(props) {
     super(props);
     
-    this.state = {
-      display: 'Tool'
-    }
+    this.state = [{
+      tool: <div>
+        <Tool className="Main-tool" />
+      </div>,
+      quickGuide: <div>
+        <QuickGuide className="Main-help" />
+      </div>
+    }]
   }
 
   getInitialState() {
@@ -21,7 +27,7 @@ class Main extends React.Component {
 
   handleClick() {
       var display = this.state.display
-      var newActive = display === 'Tool' ? 'Help' : 'Tool'
+      var newActive = display;
       this.setState({
           display: newActive
     });

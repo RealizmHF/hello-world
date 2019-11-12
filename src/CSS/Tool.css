@@ -8,6 +8,9 @@
         "sort-by sort-by sort-by"
         "buttons buttons buttons";
     grid-template-columns: 1fr 1fr;
+    padding-left: 250px;
+    border: 2px solid rgb(0, 50, 113);
+    width: 50%;
 }
 
 .Tool-data{

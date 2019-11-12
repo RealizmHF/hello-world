@@ -1,6 +1,10 @@
 .Main-tool-view{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "temp tool temp"
+        "temp tool temp"
+        "temp tool temp";
 }
 
 .Main-header{

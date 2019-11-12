@@ -1,12 +1,27 @@
 import React from 'react';
-import Main from './components/Main';
+import Header from './components/Header';
+import Tool from './components/Tool'
+import Datgon from './components/Datgon'
+import QuickGuide from './components/QuickGuide';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 // import './CSS/App.css';
 
 function App() {
   return (
-    <div className="App">
-      <Main />
-    </div>
+    <Router>
+				<div className='App'>
+					<div className='container'>
+						<Header />
+            <Route exact link='jax.org' />
+						<Route exact path='/' render={(props) => ( <Tool /> )} />
+						<Route path='/quick-guide' component={QuickGuide} />
+            <Route path='/datgon' component={Datgon} />
+					</div>
+				</div>
+			</Router>
+    // <div className="App">
+    //   <Main />
+    // </div>
   );
 }
 

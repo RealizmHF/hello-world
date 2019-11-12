@@ -1,26 +1,38 @@
 
 import React from 'react';
-import sciencelab from '/Users/james/Desktop/hello-world/src/Images/scienceLab.jpg';
-import jax from '/Users/james/Desktop/hello-world/src/Images/jax.png';
+import sciencelab from './Images/scienceLab.jpg';
+import jax from './Images/jax.png';
 import '/Users/james/Desktop/hello-world/src/CSS/Header.css';
-import HeaderLinks from './HeaderLinks';
+import { Link } from 'react-router-dom';
 
 class Header extends React.Component {
 
     render(){
         return(
             <div className="Header">
-                <header className="Header-header">
+                <div className="Header-header">
                     <img src={jax} className="Header-logo" alt="jax" />
+                    <div className="Header-link-line">
+                        <a
+                            href="http://www.simonjohnlab.org/"
+                            rel="noopener noreferrer"
+                            type="button"
+                        >
+                            <button className="Header-button">
+                                Welcome to the John Lab
+                            </button>
+                        </a>
+                        <Link className='Header-button' to="/">New Search</Link>
+                        <Link className='Header-button' to="/Download">Download</Link>
+                        <Link className='Header-button' to="/QuickGuide">Quick Guide</Link>
+                        <Link className='Header-button' to="/ContactUs">ContactUs</Link>
+                    </div>
                     <div className="Header-title">
                         <img src={sciencelab} className="Header-title-image" alt="title" />
                         <h1 className="Header-title-text">
                            Glaucoma Discovery Platform
                         </h1>
                     </div>
-                </header>
-                <div className="Header-link-line">
-                    <HeaderLinks />
                 </div>
             </div>
         );
