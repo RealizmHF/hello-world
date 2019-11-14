@@ -1,3 +1,10 @@
+## Initial Notes
+
++ Currently focused on styling the DataSet checkboxes.
++ Added the border and Tissue option to show I can easily implement other parts of the form and control how it displays
++ Small bug with hovering over The John Lab button that sizes itself too large and pushes content down
++ Images on the Quick Guide page are duplicated due to lack of knowledge when initially implementing these and haven't gone back to fix the mistake... yet.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
