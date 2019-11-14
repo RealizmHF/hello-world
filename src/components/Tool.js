@@ -1,6 +1,7 @@
 import React from 'react'
 import DataSet from './DataSet'
-import '/Users/james/Desktop/hello-world/src/CSS/Tool.css'
+import Tissue from './Tissue'
+import './CSS/Tool.css'
 
 
 class Tool extends React.Component{
@@ -8,7 +9,12 @@ class Tool extends React.Component{
     render(){
         return(
             <div className="Tool-header">
-                <DataSet className="Tool-data" />
+                <div className="Tool-data">
+                    <DataSet className="Tool-data-set" />
+                </div>
+                <div className="Tool-tissue">
+                    <Tissue className="Tool-tissue-set" />
+                </div>
             </div>
         );
     }

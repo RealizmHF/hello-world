@@ -1,13 +1,13 @@
 import React from 'react'
 import Tool from './Tool'
 import Header from './Header'
-import '/Users/james/Desktop/hello-world/src/CSS/Main.css'
-import QuickGuide from './QuickGuide';
+import './CSS/Main.css'
+import QuickGuide from './QuickGuide'
 
 class Main extends React.Component {
 
   constructor(props) {
-    super(props);
+    super(props)
     
     this.state = [{
       tool: <div>
@@ -27,10 +27,10 @@ class Main extends React.Component {
 
   handleClick() {
       var display = this.state.display
-      var newActive = display;
+      var newActive = display
       this.setState({
           display: newActive
-    });
+    })
   }
 
   render() {
@@ -40,9 +40,9 @@ class Main extends React.Component {
           <Header className="Main-header" />
           <Tool className="Main-tool" />
         </div>
-    );
+    )
 
   }
 }
 
-export default Main;
+export default Main

@@ -1,9 +1,9 @@
 
-import React from 'react';
-import sciencelab from './Images/scienceLab.jpg';
-import jax from './Images/jax.png';
-import '/Users/james/Desktop/hello-world/src/CSS/Header.css';
-import { Link } from 'react-router-dom';
+import React from 'react' 
+import sciencelab from './Images/scienceLab.jpg'
+import jax from './Images/jax.png'
+import './CSS/Header.css' 
+import { Link } from 'react-router-dom' 
 
 class Header extends React.Component {
 
@@ -23,9 +23,9 @@ class Header extends React.Component {
                             </button>
                         </a>
                         <Link className='Header-button' to="/">New Search</Link>
-                        <Link className='Header-button' to="/Download">Download</Link>
-                        <Link className='Header-button' to="/QuickGuide">Quick Guide</Link>
-                        <Link className='Header-button' to="/ContactUs">ContactUs</Link>
+                        <Link className='Header-button' to="/download">Download</Link>
+                        <Link className='Header-button' to="/quick-guide">Quick Guide</Link>
+                        <Link className='Header-button' to="/contact-us">Contact Us</Link>
                     </div>
                     <div className="Header-title">
                         <img src={sciencelab} className="Header-title-image" alt="title" />
@@ -35,7 +35,7 @@ class Header extends React.Component {
                     </div>
                 </div>
             </div>
-        );
+        )
     }
 }
 

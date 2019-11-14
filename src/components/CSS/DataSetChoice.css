@@ -1,0 +1,15 @@
+.checkbox-button {
+    position: relative;
+    display: inline-block;
+    background-color: red;
+    cursor: pointer;
+    width: 60px;
+    height: 34px;
+  }
+
+  .checkbox-button is-checked{
+      background-color: red;
+  }
+  .checkbox-button is-unchecked{
+      background-color: blue;
+  }

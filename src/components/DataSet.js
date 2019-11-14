@@ -1,16 +1,34 @@
 import React from 'react'
-import '/Users/james/Desktop/hello-world/src/CSS/DataSet.css'
 import DataSetChoice from './DataSetChoice'
+import './CSS/DataSet.css'
 
 class DataSet extends React.Component{
 
+    constructor(props){
+        super(props)
+
+        this.state = {
+            checked: false
+        }
+
+        // this.dataStyle = this.dataStyle.bind(this)
+    }
+
     render(){
         return(
-            <div className="DataSet">
-                <DataSetChoice name="Molecular-ONH" check={true} />
-                <DataSetChoice name="Molecular-ONH 8.5 & 10.5" check={true} />
-                <DataSetChoice name="Molecular-ONH" check={true} />
-                <DataSetChoice name="Molecular-ONH" check={true} />
+            <div className='DataSet'>
+                <div className='1'>
+                    <DataSetChoice name="Molecular-ONH" />
+                </div>
+                <div className='2'>
+                    <DataSetChoice name="Molecular-ONH 8.5 & 10.5" />
+                </div>
+                <div className='3'>
+                    <DataSetChoice name="Molecular Retina" />
+                </div>
+                <div className='4'>
+                    <DataSetChoice name="Morphological" />
+                </div>
             </div>
         )
     }
