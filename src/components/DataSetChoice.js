@@ -15,44 +15,33 @@ class DataSetChoice extends Component {
         this.isChecked = this.isChecked.bind(this);
     }
 
+    toggleChecked() {
+        this.setState(change => ({
+            checked: !this.state.checked 
+        }));
+    }
 
-//     render() {
-//         return (
-//             <span onClick={this.handleClick} className="outerspan">
-//                 <input type="checkbox" className="checkbox" />
-//                 <span className="span"></span>
-//                 <label className="checklabel" for="checkbox">{this.props.name}</label>
-//             </span>
-//         )
-//     }
-// }
-//
-toggleChecked() {
-    this.setState(change => ({
-        checked: !this.state.checked 
-    }));
-}
-
-isChecked(check) {
-    let temp = check
+    isChecked(check) {
+        let temp = check
     
-    if (this.state.checked) 
-        { temp += '-is-checked' }
-    else 
-        { temp += '-is-unchecked' }
+        if (this.state.checked) 
+            { temp += '-is-checked' }
+        else 
+            { temp += '-is-unchecked' }
 
-    return temp;
-}
-render() {
+        return temp;
+    }
 
-    const check = this.isChecked('checkbox-button')
-    return (
-        <section className={ check } onClick={ this.toggleChecked }>
-            <input className="checkbox" type="checkbox" checked={this.state.checked} />
-            <label className="label">{ this.props.name }</label>
-        </section>
-    )
-}
+    render() {
+        const check = this.isChecked('checkbox-button')
+        
+        return (
+            <section className={ check } onClick={ this.toggleChecked }>
+                <input className="checkbox" type="checkbox" checked={this.state.checked} />
+                <label className="label">{ this.props.name }</label>
+            </section>
+        )
+    }
 }
 
 export default DataSetChoice

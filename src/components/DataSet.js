@@ -10,23 +10,21 @@ class DataSet extends React.Component{
         this.state = {
             checked: false
         }
-
-        // this.dataStyle = this.dataStyle.bind(this)
     }
 
     render(){
         return(
             <div className='DataSet'>
-                <div className='1'>
+                <div className='MONH'>
                     <DataSetChoice name="Molecular-ONH" />
                 </div>
-                <div className='2'>
+                <div className='MONH-Two'>
                     <DataSetChoice name="Molecular-ONH 8.5 & 10.5" />
                 </div>
-                <div className='3'>
+                <div className='MORetina'>
                     <DataSetChoice name="Molecular Retina" />
                 </div>
-                <div className='4'>
+                <div className='MORPH'>
                     <DataSetChoice name="Morphological" />
                 </div>
             </div>
