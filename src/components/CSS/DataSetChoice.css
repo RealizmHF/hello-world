@@ -1,24 +1,30 @@
-.checkbox-button {
-    position: relative;
-    background-color: red;
-    cursor: pointer;
-  }
   .checkbox{
       display: none;
   }
   .checkbox-button-is-checked{
     background-color: rgb(0, 179, 255);
+    color: rgb(0, 50, 113);
     text-align: center;
-
-    border: 2px solid grey;
+    border: 2px solid;
     border-radius: 25px;
     height: 40px;
+    width: 225px;
+    box-shadow: 2px 2px inset;
+    cursor: pointer;
+    padding-top: 20px;
+    font-family: Impact, Charcoal, sans-serif;
   }
   .checkbox-button-is-unchecked{
     background-color: rgb(0, 50, 113);
     color: white;
     text-align: center;
-    border: 2px solid grey;
+    border: 2px solid;
     border-radius: 25px;
     height: 40px;
+    width: 225px;
+    cursor: pointer;
+    padding-top: 20px;
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 13pt;
+    font-style: bold;
   }
