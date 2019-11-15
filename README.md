@@ -1,5 +1,6 @@
 ## Initial Notes
 
++ Styling based on the jax.org website
 + Currently focused on styling the DataSet checkboxes.
 + Added the border and Tissue option to show I can easily implement other parts of the form and control how it displays
 + Small bug with hovering over The John Lab button that sizes itself too large and pushes content down
