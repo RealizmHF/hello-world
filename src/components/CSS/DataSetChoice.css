@@ -7,19 +7,18 @@
       display: none;
   }
   .checkbox-button-is-checked{
-    background-color: red;
+    background-color: rgb(0, 179, 255);
+    text-align: center;
 
-    border: 1px solid grey;
-    border-radius: 10px;
+    border: 2px solid grey;
+    border-radius: 25px;
     height: 40px;
   }
   .checkbox-button-is-unchecked{
-    background-color: blue;
-    border: 1px solid grey;
-    border-radius: 10px;
+    background-color: rgb(0, 50, 113);
+    color: white;
+    text-align: center;
+    border: 2px solid grey;
+    border-radius: 25px;
     height: 40px;
-  }
-
-  .label{
-      position: relative;
   }
