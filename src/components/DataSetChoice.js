@@ -28,10 +28,8 @@ class DataSetChoice extends Component {
 // }
 //
 toggleChecked() {
-    // if (this.state.isAnimating) return false;       //DO THIS RIGHT NOW <<<<----------------------------
     this.setState(change => ({
-        checked: !this.state.checked  //,
-        // isAnimating: true,
+        checked: !this.state.checked 
     }));
 }
 
@@ -39,24 +37,19 @@ isChecked(check) {
     let temp = check
     
     if (this.state.checked) 
-        { temp += ' is-checked' }
+        { temp += '-is-checked' }
     else 
-        { temp += ' is-unchecked' }
-    
-    // if (this.state.isAnimating)
-    //     { result += ' do-ping'; }
+        { temp += '-is-unchecked' }
 
     return temp;
 }
 render() {
 
-    const check = this.isChecked('checkbox-btn')
-    console.log(check)
+    const check = this.isChecked('checkbox-button')
     return (
         <section className={ check } onClick={ this.toggleChecked }>
             <input className="checkbox" type="checkbox" checked={this.state.checked} />
             <label className="label">{ this.props.name }</label>
-            {/* <div className="ui-btn-ping" onTransitionEnd={this.ping}></div> */}
         </section>
     )
 }
